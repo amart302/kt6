@@ -1,0 +1,40 @@
+<main>
+    <div class="main-block1">
+        <h1>Works</h1>
+        <div class="cards-container">
+            @for(card of cards; track $index){
+                <div class="card">
+                    <img src="{{ card.image }}"alt="" />
+                    <div class="card_infoBlock">
+                        <h4 class="title">{{ card.title }}</h4>
+                        <div class="card_podBlock">
+                            <p class="year">{{ card.year }}</p>
+                            <p class="type">{{ card.type }}</p>
+                        </div>
+                        <p class="description">{{ card.description }}</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="main-block2">
+        <h2>Designing Dashboards with<br>
+            usability in mind</h2>
+        <div class="main-block2-podBlock">
+            <p class="year" style="background-color: #FF7C7C;">2020</p>
+            <p>Dashboard, User Experience Design</p>
+        </div>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia<br>
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img src="./images/main-block2Img.png" alt="">
+    </div>
+    <div class="main-block3">
+        <h2>Heading 1</h2>
+        <h3>Heading 2</h3>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia<br>
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img src="./images/main-block3Img1.png" alt="">
+        <img src="./images/main-block3Img2.png" alt="">
+
+    </div>
+</main>
